@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.HomePageFormController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="730.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/13.PNG" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="295.0" layoutY="425.0" onAction="#btnGetstartOnAction" style="-fx-background-color: white; -fx-background-radius: 15;" text="GET START">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

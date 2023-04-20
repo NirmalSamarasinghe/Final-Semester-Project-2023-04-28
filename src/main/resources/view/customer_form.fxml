@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="786.0" prefWidth="1120.0" style="-fx-background-color: #c0d0c9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.CustomerFormController">
+   <children>
+      <Label layoutX="25.0" layoutY="13.0" prefHeight="51.0" prefWidth="431.0" text="CUSTOMER PANEL" textFill="#013220">
+         <font>
+            <Font name="Bauhaus 93" size="52.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerName" layoutX="650.0" layoutY="128.0" onKeyReleased="#customerNameOnkeyReleased" prefHeight="39.0" prefWidth="347.0" promptText=" Customer Name" style="-fx-background-color: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCustomerId" layoutX="180.0" layoutY="128.0" onAction="#txtCustomerIdOnAction" onKeyReleased="#customerIdOnkeyReleased" prefHeight="39.0" prefWidth="347.0" promptText=" Customer Id" style="-fx-background-color: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCustomerContact" layoutX="651.0" layoutY="234.0" onKeyReleased="#customerContactOnkeyReleased" prefHeight="39.0" prefWidth="347.0" promptText=" Customer Contact" style="-fx-background-color: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCustomerAddress" layoutX="181.0" layoutY="237.0" onKeyReleased="#customerAddressOnkeyReleased" prefHeight="39.0" prefWidth="347.0" promptText=" Customer Address" style="-fx-background-color: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <TableView fx:id="customerTable" layoutX="62.0" layoutY="377.0" prefHeight="358.0" prefWidth="903.0">
+        <columns>
+          <TableColumn fx:id="colCustomerId" prefWidth="113.0" text="Customer_Id" />
+          <TableColumn fx:id="colCustomerName" prefWidth="231.0" text="Customer_Name" />
+            <TableColumn fx:id="colCustomerAddress" prefWidth="219.33331298828125" text="Customer_Address" />
+            <TableColumn fx:id="colCustomerContact" minWidth="0.0" prefWidth="166.66668701171875" text="Customer_Contact" />
+            <TableColumn fx:id="colRemove" minWidth="0.0" prefWidth="166.66668701171875" text="Customer_Contact" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="370.0" fitWidth="262.0" layoutX="-2.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton buttonType="RAISED" layoutX="932.0" layoutY="320.0" onAction="#btnSaveOnAction" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #013220; -fx-background-radius: 20;" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="626.0" layoutY="319.0" onAction="#btnUpdateOnAction" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #013220; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="828.0" layoutY="320.0" onAction="#btnDeleteOnAction" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #013220; -fx-background-radius: 20;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="725.0" layoutY="319.0" onAction="#btnClearOnAction" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #013220; -fx-background-radius: 20;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="530.0" layoutY="319.0" onAction="#btnReportOnAction" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #013220; -fx-background-radius: 20;" text="Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

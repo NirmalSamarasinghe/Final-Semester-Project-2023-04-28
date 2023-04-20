@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="786.0" prefWidth="1120.0" style="-fx-background-color: #c0d0c9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ItemFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="229.0" layoutY="127.0" onAction="#btnCoffeeOnAction" style="-fx-background-color: #013220; -fx-background-radius: 15;" text="COFFEES" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="788.0" layoutY="125.0" onAction="#btnFoodOnAction" style="-fx-background-color: #013220; -fx-background-radius: 15;" text="FOOD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="35.0" layoutY="23.0" prefHeight="51.0" prefWidth="431.0" text="ITEM PANEL" textFill="#013220">
+         <font>
+            <Font name="Bauhaus 93" size="52.0" />
+         </font>
+      </Label>
+      <Line endY="-108.0" layoutX="565.0" layoutY="205.0" startY="578.0" />
+      <ImageView fitHeight="520.0" fitWidth="462.0" layoutX="56.0" layoutY="220.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../img/9623640_4224357.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="520.0" fitWidth="462.0" layoutX="616.0" layoutY="219.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../img/cupcakes.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

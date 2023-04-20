@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="482.0" fitWidth="721.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/21.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" layoutX="95.0" layoutY="154.0" promptText="Username">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" layoutX="96.0" layoutY="211.0" promptText="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="154.0" layoutY="278.0" onAction="#btnLoginOnAction" prefHeight="34.0" prefWidth="103.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/23.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="154.0" layoutY="321.0" onAction="#btnsignUpOnAction" prefHeight="34.0" prefWidth="103.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="SignUp" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
